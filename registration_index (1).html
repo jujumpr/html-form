@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="html lesson week 1">
+        <meta name="keyword" content="bootcamp, html, css, react, full stack development">
+        <meta name="author" content="Justine Ramirez">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="icon", href="cutieicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <form id='register' action='register.php' method='post' accept-charset='UTF-8'>
+            <fieldset >
+                <legend><strong>Student Portal Quick Registration Form</strong></legend>
+                <input type='hidden' id='submitted' name='fsubmitted' value='1'/> <br>
+        
+        
+                <label for='firstname' >First Name </label>
+                <input type='text' id='firstname' name='ffirstname' maxlength="50" placeholder="Enter first name" /> <br> <br> 
+                <label for='lastname' >Last Name </label>
+                <input type='text' id='lastname' name='flastname' maxlength="50" placeholder="Enter last name"/> <br> <br> 
+       
+
+                <label for='email' >Email Address*</label>
+                <input type='text' id='email' name='femail' maxlength="50" placeholder="Enter valid email"/> <br> <br> 
+
+                <label for='birthday' >Birthday</label>
+                <input type='date' id='birthday' name='fbirthday' maxlength="50" /> <br> <br> 
+
+                <label for='gender' >Gender:</label> <br>
+                <input type='radio' id='male' name='gender' value="M" />
+                <label for='gender'>Male</label>
+                <input type='radio' id='female' name='gender' value="F" />
+                <label for='female'>Female</label> <br> <br>
+
+                <label>Year Level</label>
+                <select id="gradelevel" name="fgradelevel">
+                    <option value="JH">Junior Highschool</option>
+                    <option value="SH">Senior Highschool</option>
+                    <option value="C1">1st Year College</option>
+                    <option value="C2">2nd Year College</option>
+                    <option value="C3">3rd Year College</option>
+                    <option value="C4">4th Year College</option>
+                </select><br> <br>
+
+        
+                <label for='username' >Username</label>
+                <input type='text' id='username' name='fusername' maxlength="50" placeholder="Enter unique username"/>  <br> <br> 
+
+                <label for='initialpassword' >Password*</label>
+                <input type='password' id='initialpassword' name='fpassword' maxlength="50" placeholder=""/>  <br> <br>
+                <label for='confirmpassword' >Confirm Password*</label>
+                <input type='password' id='confirmpassword' name='fpassword' maxlength="50" />  <br> <br>
+
+                <input type='submit' value='Submit' name='fSubmit'  />  <br> <br> 
+            
+
+            </fieldset>
+        </form>
+
+    </body>
+
+</html>
+
+
